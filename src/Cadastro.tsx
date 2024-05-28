@@ -139,7 +139,7 @@ export default function Cadastro({ navigation }: any) {
         </Botao>
       )}
       <Botao onPress={() => avancarSecao()} mt={4} mb={20}>
-        {numSecao == 2 ? "Finalizar" : "Avancar"}
+        {numSecao == 2 ? "Finalizar" : "Avançar"}
       </Botao>
     </ScrollView>
   );
