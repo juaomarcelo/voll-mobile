@@ -11,7 +11,7 @@ export default function Consultas(){
 
       <Titulo color="blue.500" fontSize="lg" alignSelf="flex-start" mb={2}>Próximas consultas</Titulo>
       <CardConsulta 
-        nome='Dr. Roberto Moraes'
+        nome='Dr. João Marcelo'
         especialidade='Cardiologista'
         foto='https://github.com/juaomarcelo.png'
         data='20/04/2023'
@@ -22,23 +22,23 @@ export default function Consultas(){
 
       <Titulo color="blue.500" fontSize="lg" alignSelf="flex-start" mb={2}>Consultas passadas</Titulo>
       <CardConsulta 
-        nome='Dr. Roberto Moraes'
+        nome='Dr. João Marcelo'
         especialidade='Cardiologista'
-        foto='https://github.com/robertoSRMJunior.png'
+        foto='https://github.com/juaomarcelo.png'
         data='20/04/2023'
         foiAtendido
       />
       <CardConsulta 
-        nome='Dr. Roberto Moraes'
+        nome='Dr. João Marcelo'
         especialidade='Cardiologista'
-        foto='https://github.com/robertoSRMJunior.png'
+        foto='https://github.com/juaomarcelo.png'
         data='20/04/2023'
         foiAtendido
       />
       <CardConsulta 
-        nome='Dr. Roberto Moraes'
+        nome='Dr. João Marcelo'
         especialidade='Cardiologista'
-        foto='https://github.com/robertoSRMJunior.png'
+        foto='https://github.com/juaomarcelo.png'
         data='20/04/2023'
         foiAtendido
       />

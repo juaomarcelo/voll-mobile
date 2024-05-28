@@ -7,10 +7,10 @@ export default function Perfil(){
       <VStack flex={1} alignItems="center" p={5}>
         <Titulo color="blue.500">Meu Perfil</Titulo>
 
-        <Avatar size="xl" source={{ uri: "https://github.com/robertoSRMJunior.png" }} mt={5} />
+        <Avatar size="xl" source={{ uri: "https://github.com/juaomarcelo.png" }} mt={5} />
 
         <Titulo color="blue.500">Informações pessoais</Titulo>
-        <Titulo fontSize="lg" mb={1}>Roberto Moraes</Titulo>
+        <Titulo fontSize="lg" mb={1}>João Marcelo</Titulo>
         <Text>01/04/1988</Text>
         <Text>São Paulo</Text>
 
