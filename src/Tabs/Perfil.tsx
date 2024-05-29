@@ -37,7 +37,7 @@ export default function Perfil({navigation}) {
 
         <Avatar
           size="xl"
-          source={{ uri: dadosPaciente.imagem }}
+          source={{ uri: dadosPaciente?.imagem }}
           mt={5}
         />
 
@@ -45,8 +45,8 @@ export default function Perfil({navigation}) {
         <Titulo fontSize="lg" mb={1}>
           {dadosPaciente.nome}
         </Titulo>
-        <Text>dadosPaciente.email</Text>
-        <Text>dadosPaciente.endereco.estado</Text>
+        <Text>dadosPaciente?.email</Text>
+        <Text>dadosPaciente?.endereco?.estado</Text>
 
         <Divider mt={5} />
 
