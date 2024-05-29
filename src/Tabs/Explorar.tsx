@@ -27,7 +27,7 @@ export default function Explorar(){
     if(resultado){
       setResultadoBusca(resultado)
       console.log(resultado)
-    }
+    } 
   }
 
   return(

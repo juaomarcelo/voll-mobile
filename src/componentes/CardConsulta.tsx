@@ -8,6 +8,7 @@ interface CardProps {
   data?: string;
   foiAtendido?: boolean;
   foiAgendado?: boolean;
+  onPress?: () => void;
 }
 
 export function CardConsulta({
