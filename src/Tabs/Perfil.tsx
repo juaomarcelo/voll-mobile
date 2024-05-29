@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { pegarDadosPaciente } from "../servicos/PacienteServico";
 import { Paciente } from "../interfaces/Paciente";
+import { Botao } from "../componentes/Botao";
 
-export default function Perfil() {
+export default function Perfil({navigation}) {
   const [dadosPaciente, setDadosPaciente] = useState({} as Paciente);
 
   useEffect(() => {
@@ -21,6 +22,14 @@ export default function Perfil() {
     }
     dadosPaciente()
   });
+
+    function deslogar( ){
+    AsyncStorage.removeItem("pacienteId");
+    AsyncStorage.removeItem("token");
+    navigation.replace("Login");
+  }
+    
+  
   return (
     <ScrollView flex={1}>
       <VStack flex={1} alignItems="center" p={5}>
@@ -28,7 +37,7 @@ export default function Perfil() {
 
         <Avatar
           size="xl"
-          source={{ uri: "https://github.com/juaomarcelo.png" }}
+          source={{ uri: dadosPaciente.imagem }}
           mt={5}
         />
 
@@ -36,16 +45,20 @@ export default function Perfil() {
         <Titulo fontSize="lg" mb={1}>
           {dadosPaciente.nome}
         </Titulo>
-        <Text>01/04/1988</Text>
-        <Text>São Paulo</Text>
+        <Text>dadosPaciente.email</Text>
+        <Text>dadosPaciente.endereco.estado</Text>
 
         <Divider mt={5} />
 
-        <Titulo color="blue.500" mb={1}>
-          Histórico médico
-        </Titulo>
-        <Text>Bronquite</Text>
-        <Text>Sinusite</Text>
+        <Titulo color="blue.500" mb={1}>Planos de saúde </Titulo>
+        {
+          dadosPaciente.planosSaude?.map((plano, index) => (
+            <Text key={index}>{plano}</Text>
+          ))
+        }
+      <Botao onPress={deslogar}>
+        deslogar
+      </Botao>
       </VStack>
     </ScrollView>
   );
