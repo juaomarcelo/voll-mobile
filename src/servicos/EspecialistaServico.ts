@@ -5,7 +5,7 @@ export async function buscarEspecialistaPorEstado(
   especialidade: string
 ) {
   try {
-    const resultado = await api.get('especialista/busca', {
+    const resultado = await api.get("especialista/busca", {
       params: {
         estado,
         especialidade,

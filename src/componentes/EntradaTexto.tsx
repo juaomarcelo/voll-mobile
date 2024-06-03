@@ -8,13 +8,13 @@ interface InputProps {
   onChangeText?: (text: string) => void;
 }
 
-export function EntradaTexto ({ 
-  label, 
-  placeholder, 
+export function EntradaTexto({
+  label,
+  placeholder,
   secureTextEntry = false,
   value,
-  onChangeText
-} : InputProps) : JSX.Element {
+  onChangeText,
+}: InputProps): JSX.Element {
   return (
     <FormControl mt={3}>
       {label && <FormControl.Label>{label}</FormControl.Label>}
@@ -31,4 +31,4 @@ export function EntradaTexto ({
       />
     </FormControl>
   );
-};
+}
