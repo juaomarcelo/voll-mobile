@@ -31,7 +31,14 @@ export default function Agendamento({ route, navigation }: any) {
       description: "Horário indispoível",
       backgroundColor: "red.500",
     });
+  
   }
+  function voltar(){
+    navigation.replace('Login')
+    
+  }
+  
+  
   return(
     <VStack flex={1} alignItems="center" justifyContent="center" padding={5}>
         <Input
@@ -41,6 +48,9 @@ export default function Agendamento({ route, navigation }: any) {
 
         <Botao onPress={agendar}>
             Agendar
+        </Botao>
+        <Botao onPress={voltar}>
+          Voltar
         </Botao>
     </VStack>
   )
